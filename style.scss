@@ -1,0 +1,43 @@
+$backgroundcolor:blue; 
+$primarycolor: lightblue;
+
+
+
+@function fontsize($fontsize){
+    @return $fontsize*2;
+}
+
+@function complement($backgroundcolor){
+    @return complement($backgroundcolor);
+}
+
+@function colorswitch($primarycolor){
+    @return Lighten($primarycolor,30%);
+}
+
+@mixin border() {
+    border-radius: 5px;
+}
+
+@mixin headingcolor {
+    color: red;
+    background-color: aquamarine;
+}
+button{
+    @include border();
+}
+p{
+    color: $primarycolor;
+    color: colorswitch($primarycolor);
+
+}
+
+a{
+    
+    color: complement($backgroundcolor);
+}
+
+h1{
+    font-size: fontsize(25px);
+    @include headingcolor();
+}

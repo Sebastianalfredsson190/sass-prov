@@ -1,0 +1,19 @@
+button {
+  border-radius: 5px;
+}
+
+p {
+  color: lightblue;
+  color: Lighten(lightblue, 30%);
+}
+
+a {
+  color: complemet();
+  color-background-color: blue;
+}
+
+h1 {
+  font-size: 50px;
+  color: red;
+  background-color: aquamarine;
+}/*# sourceMappingURL=style.css.map */
